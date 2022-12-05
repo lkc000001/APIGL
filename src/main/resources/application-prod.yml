@@ -1,0 +1,37 @@
+spring:
+   datasource:
+      dynamic:
+         primary: DBTLPM
+         strict: true
+         datasource:
+            DBAPIGL:
+               driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+               jndi-name: java:/apigl
+            DBTLPM:
+               driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+               jndi-name: java:/lpm
+            DBTOAPI:
+               driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+               jndi-name: java:/oapi
+            DBTREWARD:
+               driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+               jndi-name: java:/reward
+            DBTICP:
+               driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+               jndi-name: java:/icp
+            DBTMTP:
+               driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+               jndi-name: java:/mtp
+ 
+eportalserver:
+   url: http://10.16.22.109/TBBEPortalServlet/eportal
+   apiuser: APIGL
+   apimima: Abcd1234
+   apname: APIGL
+
+rootlogin:
+   user: "root"
+   mima: "a50281bbb1713e9c978d124ed84466f763d2df6fde40264eef02752ee1c8a666"
+   
+eportalhomepage:
+   homepage: "http://10.16.22.109/TBBEPortal/EmployeeLogin.jsp"

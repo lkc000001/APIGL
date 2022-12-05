@@ -1,0 +1,49 @@
+spring:
+   datasource:
+      dynamic:
+         primary: DBAPIGL
+         strict: true
+         datasource:
+            DBAPIGL:
+               url: jdbc:sqlserver://127.0.0.1;database=localtest;
+               username: tommy
+               password: 12345678
+               driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+            DBTLPM:
+               url: jdbc:sqlserver://127.0.0.1;database=DBTLPM;
+               username: tommy
+               password: 12345678
+               driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+            DBTOAPI:
+               url: jdbc:sqlserver://127.0.0.1;database=DBTOAPI;
+               username: tommy
+               password: 12345678
+               driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+            DBTREWARD:
+               url: jdbc:sqlserver://127.0.0.1;database=DBTREWARD
+               username: tommy
+               password: 12345678
+               driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+            DBTICP:
+               url: jdbc:sqlserver://127.0.0.1;database=DBTICP
+               username: tommy
+               password: 12345678
+               driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+            DBTMTP:
+               url: jdbc:sqlserver://127.0.0.1;database=DBTMTP
+               username: tommy
+               password: 12345678
+               driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+eportalserver:
+   url: "http://10.16.22.109/TBBEPortalServlet/eportal"
+   apiuser: "APIGL"
+   apimima: "!QAZ2wsx"
+   apname: "APIGL"
+   
+rootlogin:
+   user: "root"
+   mima: "a50281bbb1713e9c978d124ed84466f763d2df6fde40264eef02752ee1c8a666"
+   
+eportalhomepage:
+   homepage: "https://www.google.com.tw/?hl=zh_TW"
